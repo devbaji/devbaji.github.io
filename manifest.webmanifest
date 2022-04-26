@@ -1,11 +1,11 @@
 {
   "name": "LMS app",
   "short_name": "LMS app",
-  "start_url": "/",
+  "start_url": "./",
   "display": "fullscreen",
   "background_color": "#ffffff",
   "lang": "en",
-  "scope": "/",
+  "scope": "./",
   "description": "Description of your app",
   "theme_color": "#ffffff",
   "icons": [
