@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["notFound"],{9703:function(n,t,e){"use strict";e.r(t);var s=function(){var n=this,t=n.$createElement;n._self._c;return n._m(0)},u=[function(){var n=this,t=n.$createElement,e=n._self._c||t;return e("div",{staticClass:"notfound"},[e("h1",[n._v("404 NOT FOUND")])])}],c=e("2877"),l={},o=Object(c["a"])(l,s,u,!1,null,null,null);t["default"]=o.exports}}]);
+//# sourceMappingURL=notFound.5e2f363b.js.map
