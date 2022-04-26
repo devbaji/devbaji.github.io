@@ -1,1 +1,50 @@
-if(!self.define){let e,i={};const s=(s,n)=>(s=new URL(s+".js",n).href,i[s]||new Promise((i=>{if("document"in self){const e=document.createElement("script");e.src=s,e.onload=i,document.head.appendChild(e)}else e=s,importScripts(s),i()})).then((()=>{let e=i[s];if(!e)throw new Error(`Module ${s} didn’t register its module`);return e})));self.define=(n,r)=>{const o=e||("document"in self?document.currentScript.src:"")||location.href;if(i[o])return;let c={};const t=e=>s(e,o),l={module:{uri:o},exports:c,require:t};i[o]=Promise.all(n.map((e=>l[e]||t(e)))).then((e=>(r(...e),c)))}}define(["./workbox-b3e22772"],(function(e){"use strict";self.addEventListener("message",(e=>{e.data&&"SKIP_WAITING"===e.data.type&&self.skipWaiting()})),e.precacheAndRoute([{url:"assets/AboutView.7d3c08e7.js",revision:null},{url:"assets/AboutView.ab071ea6.css",revision:null},{url:"assets/index.038ca730.css",revision:null},{url:"assets/index.5fe407da.js",revision:null},{url:"index.html",revision:"7fb9c1cafaca9abf253c91f6ca7624e1"},{url:"favicon.ico",revision:"1ba2ae710d927f13d483fd5d1e548c9b"},{url:"img/icons/android-chrome-192x192.png",revision:"f130a0b70e386170cf6f011c0ca8c4f4"},{url:"img/icons/android-chrome-512x512.png",revision:"0ff1bc4d14e5c9abcacba7c600d97814"},{url:"img/icons/android-chrome-maskable-512x512.png",revision:"2695f5feb66cdb0c6f09d0e415824cf9"},{url:"manifest.webmanifest",revision:"2f53e7b47e85d1b8061c7f7525a2678d"}],{}),e.cleanupOutdatedCaches(),e.registerRoute(new e.NavigationRoute(e.createHandlerBoundToURL("index.html")))}));
+// Change this to your repository name
+var GHPATH = '';
+
+// Choose a different app prefix name
+var APP_PREFIX = 'gppwa_';
+
+// The version of the cache. Every time you change any of the files
+// you need to change this version (version_01, version_02…). 
+// If you don't change the version, the service worker will give your
+// users the old files!
+var VERSION = 'version_00';
+
+// The files to make available for offline use. make sure to add 
+// others to this list
+var URLS = [
+  `https://cdn.jsdelivr.net/npm/@mdi/font@latest/css/materialdesignicons.min.css`,
+  `${GHPATH}/index.html`,
+  `${GHPATH}/css/books.f92109e4.css`,
+  `${GHPATH}/css/books~distribute~logs~reports~return~singleBook~singleMember.2090ba31.css`,
+  `${GHPATH}/css/bulkUpload.3435b2aa.css`,
+  `${GHPATH}/css/dashboard.d68b03f1.css`,
+  `${GHPATH}/css/distribute.bdf4d8f4.css`,
+  `${GHPATH}/css/logs.50511716.css`,
+  `${GHPATH}/css/members.aa35bca3.css`,
+  `${GHPATH}/css/reports.2bbd3e78.css`,
+  `${GHPATH}/css/return.bdf4d8f4.css`,
+  `${GHPATH}/css/settings~singleMember.e1fb5b87.css`,
+  `${GHPATH}/css/singleBook.b7d93eaa.css`,
+  `${GHPATH}/css/singleMember.7d3f0686.css`,
+  `${GHPATH}/css/chunk-vendors.268fc779.css`,
+  `${GHPATH}/css/app.52088615.css`,
+  `${GHPATH}/js/books.644e3a9a.js`,
+  `${GHPATH}/js/books~distribute~logs~reports~return~singleBook~singleMember.724eecc9.js`,
+  `${GHPATH}/js/bulkUpload.8b088511.js`,
+  `${GHPATH}/js/dashboard.7e8ae08a.js`,
+  `${GHPATH}/js/distribute.eed3a1a8.js`,
+  `${GHPATH}/js/logs.5090b6dc.js`,
+  `${GHPATH}/js/members.65c2b2ee.js`,
+  `${GHPATH}/js/notFound.5e2f363b.js`,
+  `${GHPATH}/js/reports.41aa6a61.js`,
+  `${GHPATH}/js/return.f3b465c5.js`,
+  `${GHPATH}/js/settings.5724e33f.js`,
+  `${GHPATH}/js/settings~singleMember.402e47a7.js`,
+  `${GHPATH}/js/singleBook.0850081d.js`,
+  `${GHPATH}/js/singleMember.2f7a4992.js`,
+  `${GHPATH}/css/app.52088615.css`,
+  `${GHPATH}/css/chunk-vendors.268fc779.css`,
+  `${GHPATH}/js/app.c9fd12dd.js`,
+  `${GHPATH}/js/chunk-vendors.5b7cac77.js`
+]
