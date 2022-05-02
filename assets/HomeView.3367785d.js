@@ -1,0 +1,1 @@
+import{o as n,c as a}from"./index.b2bf95d0.js";var s=(e,o)=>{const r=e.__vccOpts||e;for(const[t,c]of o)r[t]=c;return r};const _={};function l(e,o){return n(),a("h3",null,"Welcome to fireblogs")}var m=s(_,[["render",l]]);export{m as default};
