@@ -1,4 +1,7 @@
-
+let backGround = "#fff";
+if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+  backGround = '#000';
+}
 particlesJS("particles-js", {
   "particles": {
     "number": {
@@ -9,13 +12,13 @@ particlesJS("particles-js", {
       }
     },
     "color": {
-      "value": "#fff"
+      "value": backGround
     },
     "shape": {
       "type": "circle",
       "stroke": {
         "width": 0,
-        "color": "#ffffff"
+        "color": backGround
       },
       "polygon": {
         "nb_sides": 5
