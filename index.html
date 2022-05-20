@@ -41,7 +41,6 @@
 <body>
 	<!-- particles.js container -->
 	<div id="particles-js"></div>
-	</div>
 	<div class="main-contents container-fluid row">
 		<div class="rotated_container d-flex">
 			<div class="column1 left">
@@ -62,25 +61,25 @@
 				<a target="_blank" href="resume.pdf" class="menu_item clickable">
 					<div class="menu_title pt-5 animated fadeIn">Resume</div>
 				</a>
-				<div id="skills" href="#skillsModal" class="menu_item clickable">
+				<a id="skills" href="#skillsModal" class="menu_item clickable">
 					<div class="menu_title animated fadeIn">SKILLS</div>
-				</div>
-				<div id="contact" href="#contactModal" class="menu_item clickable">
+				</a>
+				<a id="contact" href="#contactModal" class="menu_item clickable">
 					<div class="menu_title animated fadeIn">CONTACT</div>
-				</div>
-				<div class="menu_item">
-				</div>
-				<div class="menu_item">
-				</div>
+				</a>
+				<a class="menu_item">
+				</a>
+				<a class="menu_item">
+				</a>
 			</div>
 			<div class="column3 left">
 				<div class="menu_item">
 				</div>
 				<div class="menu_item">
 				</div>
-				<div id="works" href="#worksModal" class="menu_item clickable">
+				<a id="works" href="#worksModal" class="menu_item clickable">
 					<div class="menu_title animated fadeIn">WORKS</div>
-				</div>
+				</a>
 				<div class="menu_item longer">
 				</div>
 			</div>
@@ -97,7 +96,7 @@
 		</div>
 	</div>
 	<div id="worksModal" style="opacity: 0;" class="modalParent p-4">
-		<div id="btn-close-modal" class="close-worksModal modalClose"></div>
+		<div class="close-worksModal modalClose"></div>
 		<h1 class="modal_heading">WORKS</h1>
 		<div class="accordion" id="accordionExample">
 			<div class="card">
@@ -105,7 +104,7 @@
 					aria-expanded="false" aria-controls="collapseTwo">
 					Infinite Roll
 				</button>
-				<div id="collapseOne" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+				<div id="collapseOne" class="collapse" data-parent="#accordionExample">
 					<div class="card-body">
 						A high-score game on android<a target="_blank"
 							href="https://play.google.com/store/apps/details?id=com.BWorkz.InfiniteRoll">View it on Playstore</a>.
@@ -119,7 +118,7 @@
 					aria-expanded="false" aria-controls="collapseTwo">
 					VU Bingo (Web)
 				</button>
-				<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+				<div id="collapseTwo" class="collapse" data-parent="#accordionExample">
 					<div class="card-body">
 						A luck and logic based 25X25 board game. <a target="_blank" href="https://www.vubingo.com">Play Now</a><br>
 						Used languages at Backend Node.js, Colyseus. <br>
@@ -133,7 +132,7 @@
 					aria-expanded="false" aria-controls="collapseTwo">
 					VU Bingo (Mobile)
 				</button>
-				<div id="collapseThree" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+				<div id="collapseThree" class="collapse" data-parent="#accordionExample">
 					<div class="card-body">
 						Mobile version of VU Bingo (Web) <a target="_blank"
 							href="https://play.google.com/store/apps/details?id=com.vubingo.www">View it on Playstore</a>. <br>
@@ -146,7 +145,7 @@
 					aria-expanded="false" aria-controls="collapseTwo">
 					Vue3 Google Login
 				</button>
-				<div id="collapseFour" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+				<div id="collapseFour" class="collapse" data-parent="#accordionExample">
 					<div class="card-body">
 						A Vue 3 plugin which helps you to easily integrate a 'Login With Google' feature to your Vue 3 application
 						<a target="_blank"
@@ -157,7 +156,7 @@
 		</div>
 	</div>
 	<div id="contactModal" style="opacity: 0;" class="modalParent p-4">
-		<div id="btn-close-modal" class="close-contactModal modalClose"></div>
+		<div class="close-contactModal modalClose"></div>
 		<h1 class="modal_heading">CONTACT</h1>
 		<ul class="skills_list contact p-0">
 			<li>
@@ -192,7 +191,7 @@
 		</ul>
 	</div>
 	<div id="skillsModal" style="opacity: 0;" class="modalParent">
-		<div id="btn-close-modal" class="close-skillsModal modalClose"></div>
+		<div class="close-skillsModal modalClose"></div>
 		<div class="modalContent p-4 row">
 			<div class="col-lg-4">
 				<h1 class="modal_heading">SKILLS</h1>
@@ -212,7 +211,7 @@
 					<li>
 						<span><i class="fab fa-node-js"></i> Node.js</span>
 						<div class="skill_level_bar">
-							<div style="width: 85%" class="skill_level"></div style="width: 80%">
+							<div style="width: 85%" class="skill_level"></div>
 						</div>
 					</li>
 					<li>
