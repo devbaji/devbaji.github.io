@@ -1,18 +1,17 @@
 body {
   font-family: "Montserrat", sans-serif;
   overflow-x: hidden;
-  background-color: #000;
-  color: #ccc !important;
+  color: #fff !important;
 }
 
 a {
-  color: #ccc !important;
+  color: #fff !important;
   text-decoration: underline !important;
   font-style: italic;
 }
 
 .btn-link {
-  color: #ccc !important;
+  color: #fff !important;
   text-decoration: underline !important;
   font-style: italic;
 }
@@ -65,12 +64,12 @@ a {
 .column2 .menu_item,
 .column3 .menu_item {
   height: 365px;
-  border: solid 1px #4d4c4c;
+  border: solid 1px #a7a7a7;
 }
 
 .column1 .menu_item {
   height: 600px;
-  border: solid 1px #4d4c4c;
+  border: solid 1px #a7a7a7;
 }
 
 .menu_item.name_wrapper {
@@ -105,7 +104,7 @@ a {
 }
 
 .menu_item.clickable:hover:before {
-  border: solid 13px rgba(156, 156, 156, 0.3);
+  border: solid 13px rgba(244, 244, 244, 0.3);
   top: -13px;
   left: -13px;
   right: -13px;
@@ -146,11 +145,16 @@ h1.my_name {
   margin-bottom: 10px;
 }
 
+body.has-modal .rotated_container{
+  opacity: 0.07;
+  pointer-events: none;
+}
+
 .modalParent {
   animation-duration: 0.8s !important;
   width: 700px !important;
   overflow-x: hidden;
-  background-color: rgba(0, 0, 0, 0.8) !important;
+  background-color: rgba(0, 0, 0, 0.2) !important;
   box-shadow: inset 0 0 500px #1b1b1b;
 }
 
