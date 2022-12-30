@@ -16,24 +16,10 @@ a {
   font-style: italic;
 }
 
-#particles-js {
+.experience {
   position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-#particles-js:after {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.4);
+  width: 100vw;
+  height: 100vh;
 }
 
 .main-contents {
@@ -113,6 +99,7 @@ a {
 
 .menu_item.clickable:hover {
   border: solid 13px rgba(156, 156, 156, 0);
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .menu_item.longer {
