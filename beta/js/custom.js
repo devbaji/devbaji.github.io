@@ -24,8 +24,23 @@ $(document).ready(function () {
   //     animatedIn:'rotateInUpLeft',
   //     animatedOut:'rotateOutDownRight'
   // });
+
+  let skillsScroll = -1;
   $("#skills").click(() => {
+    skillsScroll = 0;
     debug.showSkills();
-    $('body').addClass('has-modal');
+    $("body").addClass("has-modal");
+  });
+
+  $("canvas").click(() => {
+    if (skillsScroll == 0) {
+      {
+        skillsScroll++;
+        debug.scrollSkills(1);
+      }
+    } else if (skillsScroll === 1) {
+      debug.showSkills(false);
+      $("body").removeClass("has-modal");
+    }
   });
 });

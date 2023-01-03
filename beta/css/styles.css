@@ -105,7 +105,7 @@ a {
 
 .menu_item.clickable:hover {
   border: solid 13px rgba(156, 156, 156, 0);
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.7);
   color: #fff !important;
 }
 
