@@ -1,4 +1,4 @@
-import{I as b,j as L,J as _,_ as E,f as D,p as R,O as U,u as N,o as p,c as d,K as H,$ as B,a as m,D as y,X as k,F as G,l as I,m as A,t as w,a0 as M}from"./app.44344205.js";const te={},z=[{path:"/",title:"",pathLocale:"/",contents:[{header:"Vue 3 Google Login",content:""},{header:"Overview",slug:"overview",content:`This is a lightweight plugin to implement log-in and sign-up flows using Google Identity Services with the help of Google 3P Authorization JavaScript Library
+import{I as b,j as L,J as _,_ as E,f as D,p as R,O as U,u as N,o as p,c as d,K as H,$ as B,a as m,D as y,X as k,F as G,l as I,m as A,t as w,a0 as M}from"./app.1ce4c221.js";const te={},z=[{path:"/",title:"",pathLocale:"/",contents:[{header:"Vue 3 Google Login",content:""},{header:"Overview",slug:"overview",content:`This is a lightweight plugin to implement log-in and sign-up flows using Google Identity Services with the help of Google 3P Authorization JavaScript Library
 This allows you to implement the following features Login with Google button
 Login using One Tap prompt
 Automatic Login without any user interaction
